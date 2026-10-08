@@ -1,4 +1,4 @@
-import 'package:classproject/spotify_screen.dart';
+import 'package:classproject/sign_in.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const SpotifyScreen(),
+      home: const sign_in(),
     );
   }
 }

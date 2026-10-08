@@ -63,6 +63,7 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/images/img_8.png
 
 
 
