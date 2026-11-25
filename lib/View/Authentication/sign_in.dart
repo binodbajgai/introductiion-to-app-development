@@ -65,7 +65,31 @@ class _sign_inState extends State<sign_in> {
               ),
 
             ),
+          ),
+          Padding(
+              padding: const EdgeInsets.all(8.0),
+              child:Row(
+                mainAxisAlignment:  MainAxisAlignment.end,
+                children: [
+                  Text("Forget Password",style:TextStyle(color: Colors.grey)),
+                ],
+              ),
+          ),
+          SizedBox(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white
+              ),
+              onPressed: (){
+
+            },child: Text("Log in"),
+
+            ),
           )
+
+
+
         ],
       ),
     );

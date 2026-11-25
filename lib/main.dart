@@ -1,7 +1,16 @@
-import 'package:classproject/sign_in.dart';
+import 'package:classproject/View/Authentication/regestration.dart';
+import 'package:firebase_core/firebase_core.dart';
+
+import 'View/Dashboard/dashboard_screen.dart';
+import 'View/Authentication/sign_in.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+import 'firebase_options.dart';
+
+void main() async{
+   await Firebase.initializeApp(
+     options: DefaultFirebaseOptions.currentPlatform,
+   );
   runApp(const MyApp());
 }
 
@@ -31,7 +40,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const sign_in(),
+      home: const DashboardScreen(),
     );
   }
 }
